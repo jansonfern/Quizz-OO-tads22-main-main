@@ -1,0 +1,35 @@
+.root {
+  -fx-background-color: #108f84; 
+  -fx-padding: 20px; 
+  -fx-font-family: "Arial", sans-serif;
+}
+
+.enunciado-texto {
+  -fx-font-size: 18px; /* Tamanho da fonte */
+  -fx-font-weight: bold; /* Peso da fonte */
+  -fx-text-fill: #333333; 
+  -fx-padding: 10px; /* Padding ao redor do texto */
+}
+
+/* Estilo dos botões */
+.button {
+  -fx-background-color: #9b1313; 
+  -fx-text-fill: white; 
+  -fx-font-size: 16px; /* Tamanho da fonte dos botões */
+  -fx-padding: 10px 20px; /* Padding interno dos botões */
+  -fx-margin: 5px; /* Margem ao redor dos botões */
+  -fx-border-radius: 5px; /* Bordas arredondadas */
+  -fx-background-radius: 5px; /* Bordas arredondadas de fundo */
+}
+
+.button:hover {
+  -fx-background-color: #4618c4; 
+}
+
+.reiniciar-quiz {
+  -fx-background-color: #FF5722; /* Cor de fundo do botão Reiniciar Quiz */
+}
+
+.prox-questao {
+  -fx-background-color: #FF5722; /* Cor de fundo do botão Próxima Questão */
+}
