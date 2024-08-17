@@ -1,35 +1,44 @@
 .root {
   -fx-background-color: #108f84; 
   -fx-padding: 20px; 
-  -fx-font-family: "Arial", sans-serif;
+  -fx-font-family: "Arial", sans-serif; 
 }
 
-.enunciado-texto {
-  -fx-font-size: 18px; /* Tamanho da fonte */
-  -fx-font-weight: bold; /* Peso da fonte */
-  -fx-text-fill: #333333; 
-  -fx-padding: 10px; /* Padding ao redor do texto */
+.enunciado {
+  -fx-font-size: 24px; 
+  -fx-fill: white;
+  -fx-font-weight: bold;
+  -fx-text-alignment: center;
+  -fx-padding: 10px;
 }
 
-/* Estilo dos botões */
 .button {
-  -fx-background-color: #9b1313; 
+  -fx-background-color: #9b1313;
   -fx-text-fill: white; 
-  -fx-font-size: 16px; /* Tamanho da fonte dos botões */
-  -fx-padding: 10px 20px; /* Padding interno dos botões */
-  -fx-margin: 5px; /* Margem ao redor dos botões */
-  -fx-border-radius: 5px; /* Bordas arredondadas */
-  -fx-background-radius: 5px; /* Bordas arredondadas de fundo */
+  -fx-font-size: 16px; 
+  -fx-padding: 12px 24px; 
+  -fx-margin: 5px; 
+  -fx-border-radius: 8px; 
+  -fx-background-radius: 8px; 
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0, 0, 2);
+  -fx-cursor: hand; 
 }
 
-.button:hover {
-  -fx-background-color: #4618c4; 
+.proxima, .reiniciar {
+  -fx-background-color: #006400; 
+  -fx-text-fill: white;
+  -fx-font-size: 18px; 
+  -fx-padding: 12px 24px; 
+  -fx-border-radius: 8px; 
+  -fx-background-radius: 8px;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0, 0, 2); 
+  -fx-cursor: hand; 
 }
 
-.reiniciar-quiz {
-  -fx-background-color: #FF5722; /* Cor de fundo do botão Reiniciar Quiz */
-}
-
-.prox-questao {
-  -fx-background-color: #FF5722; /* Cor de fundo do botão Próxima Questão */
+.resultado {
+  -fx-font-size: 20px;
+  -fx-fill: white;
+  -fx-font-weight: bold; 
+  -fx-text-alignment: center; 
+  -fx-padding: 10px; 
 }

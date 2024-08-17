@@ -2,12 +2,13 @@ package fernandes.ifpr;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class Questao {
 
     private final String enunciado;
     private final String respostaCorreta;
-    private final ArrayList<String> todasAlternativas;
+    private final List<String> todasAlternativas;
 
     public Questao(String enunciado, String respostaCorreta, String[] outrasAlternativas) {
         this.enunciado = enunciado;
@@ -17,9 +18,11 @@ public class Questao {
         for (String alternativa : outrasAlternativas) {
             this.todasAlternativas.add(alternativa);
         }
-        this.todasAlternativas.add(respostaCorreta);
 
-        // Embaralha a lista para garantir aleatoriedade
+        if (!this.todasAlternativas.contains(respostaCorreta)) {
+            this.todasAlternativas.add(respostaCorreta);
+        }
+
         Collections.shuffle(this.todasAlternativas);
     }
 
@@ -31,7 +34,7 @@ public class Questao {
         return respostaCorreta;
     }
 
-    public ArrayList<String> getTodasAlternativas() {
+    public List<String> getTodasAlternativas() {
         return todasAlternativas;
     }
 }

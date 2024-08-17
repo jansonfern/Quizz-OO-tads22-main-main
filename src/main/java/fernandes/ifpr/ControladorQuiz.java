@@ -38,7 +38,7 @@ public class ControladorQuiz {
         if (temProximaQuestao()) {
             return this.questoes.get(questaoAtual);
         }
-        return null; 
+        return null;
     }
 
     public boolean respondeQuestao(String alternativa) {
@@ -64,5 +64,4 @@ public class ControladorQuiz {
             questaoAtual++;
         }
     }
-    
 }
